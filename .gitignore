@@ -1,0 +1,45 @@
+# --- KiCad ---
+*.bak
+*-bak
+_autosave-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+fp-info-cache
+**/*-backups/
+*.lck
+*.kicad_pro-journal
+*-journal
+*.rpt.bak
+
+# --- 3D model caches ---
+*.3dshapes-cache/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Firmware build artifacts (PlatformIO / STM32CubeIDE / CubeMX) ---
+.pio/
+Debug/
+Release/
+*.o
+*.elf
+*.hex
+*.bin
+*.map
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editor ---
+.vscode/
+*.swp
+
+# --- Large raw data (keep processed/summarized data in git, not raw dumps) ---
+firmware/ground-station/logs/*.raw
+testing/stratospheric-launch/**/*.raw
